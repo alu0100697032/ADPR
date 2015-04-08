@@ -2,6 +2,13 @@ doctype html
 html(lang="en")
     head
         title!=title
+        script(type="text/javascript" src="path-to-mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+        script(type="text/x-mathjax-config")
+          |  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); 
+        script(type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
         script(type='text/javascript', src='js/jquery.js')
     body!=body
+
+       
+
         
