@@ -21,6 +21,10 @@ app.get('/tests', function (req, res) {
   res.render('tests', { title: 'ADPR Tests' });
 });
 
+app.get('/grammar', function (req, res) {
+  res.render('grammar', { title: 'ADPR Grammar' });
+});
+
 app.listen(app.get('port'), function() {
     console.log("Node app is running at localhost:" + app.get('port'));
 });
